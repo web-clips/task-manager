@@ -1,11 +1,15 @@
-const ListItem = ({ item }) => {
-  const { name, iconSrc, path } = item;
+import { NavLink } from 'react-router-dom'
+const ListItem = ({ name, icon, path }) => {
   return (
     <li>
-      <a href="">
-        <img src={iconSrc} alt="" />
+      <NavLink
+        to={path}
+        className={({ isActive }) =>
+          isActive ? "sidebar__link__active" : ""}
+      >
+        {icon}
         {name}
-      </a>
+      </NavLink>
     </li>
   );
 };

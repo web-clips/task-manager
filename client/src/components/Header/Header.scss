@@ -1,10 +1,68 @@
 .header {
-  height: 60px;
-  background: #e7e7e7;
-  width: calc(100% - 220px);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 220px;
-  border-bottom: 1px solid #ddd;
+  height: 70px;
+  background: #fff;
+  width: calc(100% - 255px);
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // left: 255px;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 40px;
+
+  &__search {
+    width: 350px;
+
+    &__box {
+      background-color: #f3f4f6;
+      border-radius: 10px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+
+      input {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        outline: none;
+        color:#202020;
+      }
+    }
+  }
+
+  &__addtask {
+    button {
+      background-color: #202020;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      padding: 12.25px 12px;
+      border: none;
+      cursor: pointer;
+      transition: .3s;
+      &:hover{
+        transform: scale(1.02);
+      }
+    }
+
+  }
+
+  &__account {
+    display: flex;
+    align-items: center;
+
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ddd;
+      border: none;
+    }
+  }
 }

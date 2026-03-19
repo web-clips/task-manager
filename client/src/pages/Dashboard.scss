@@ -1,0 +1,49 @@
+.page__head {
+    margin-bottom: 30px;
+
+    &__title {
+        font-size: 24px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+    }
+}
+
+.dashboard__stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .stats__item {
+        width: 32%;
+        padding: 30px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        gap:10px;
+        border-radius: 16px;
+        border:1px solid #e4e4e4;
+        &__icon {
+            width:40px;
+            height:40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #00a6ff3c;
+            border-radius: 10px;
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            h5{
+                font-size:24px;
+                font-weight: 400;
+            }
+            p{
+                font-size:12px;
+                color:#6b6b6b;
+            }
+        }
+    }
+}
